@@ -42,7 +42,6 @@ class BenchmarkHandler:
 
     def __build_return_dict(self, data, budget, train_timesteps_index):
 
-        print(self.return_names, data)
         max_budget_allowed = len(data["timesteps_eval"])
         assert budget < max_budget_allowed, f"Budget should be lower than {max_budget_allowed}"
 
