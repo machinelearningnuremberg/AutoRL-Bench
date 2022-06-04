@@ -1,9 +1,9 @@
 # AutoRL-Bench
 
-## Download the data
+### Download the data
 
-## Load the benchmark
+### Load the benchmark
 
-## Query the benchmark
+### Query the benchmark
 
-## Create your own optimizer
+### Create your own optimizer
