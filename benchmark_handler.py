@@ -34,7 +34,7 @@ class BenchmarkHandler:
             self.return_names = ["returns_eval", "std_returns_eval", "timestamps_eval", "timesteps_eval", "timesteps_train", "timestamps_train", "returns_train"]
 
 
-    def set_env_and_space(self, search_space: str, environment : str):
+    def set_env_space_seed(self, search_space: str, environment : str, seed: int):
 
         self.search_space = search_space
         self.environment = environment
@@ -66,10 +66,12 @@ class BenchmarkHandler:
                     return_dict[name] = data[name][:train_timesteps_index]
             return return_dict
 
+    def get_environments_groups (self):
+        return list(self.environment_list)
 
-    def get_environments (self, env_type: bool="atari"):
+    def get_environments (self, env_group :str="atari"):
 
-        return self.environment_list[env_type]
+        return self.environment_list[env_group]
 
     def get_search_spaces_names(self, static: bool=True):
 
