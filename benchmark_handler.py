@@ -3,13 +3,14 @@ import os
 
 class BenchmarkHandler:
 
-    def __init__(self, data_path: str="/data_arl_bench", environment: str="Pong-v0", search_space: str="PPO", 
-                       static: bool=True, return_names=None):
+    def __init__(self, data_path: str="/data_arl_bench", environment: str=None, search_space: str=None, 
+                       static: bool=True, return_names=None, seed = None):
 
         self.data_path = data_path
         
         self.environment = environment
         self.search_space = search_space
+        self.seed =  seed
         self.return_names = return_names
         self.static = static
         self.search_space_structure =  {"static": {"PPO": {"lr": [-6, -4, -4, -3, -2,-1], 
@@ -38,6 +39,7 @@ class BenchmarkHandler:
 
         self.search_space = search_space
         self.environment = environment
+        self.seed = seed
 
 
     def __build_return_dict(self, data, budget, train_timesteps_index):
@@ -89,7 +91,7 @@ class BenchmarkHandler:
         else:
             return self.search_space_structure["dynamic"][search_space]
 
-    def get_metrics(self, config: dict, search_space: str="", environment: str="" , seed: int=0, budget: int=199, static: bool=True):
+    def get_metrics(self, config: dict, search_space: str="", environment: str="" , seed: int=None, budget: int=199, static: bool=True):
 
         if search_space == "":
             assert self.search_space != None, "Please set the search space"
@@ -99,6 +101,10 @@ class BenchmarkHandler:
         if environment == "":
             assert self.environment != None, "Please set the environment"
             environment = self.environment
+
+        if seed == None:
+            assert self.seed != None, "Please set a seed"
+            seed = self.seed
 
 
         if static:
