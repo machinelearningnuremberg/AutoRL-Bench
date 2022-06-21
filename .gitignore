@@ -4,3 +4,8 @@ data_arl_bench/A2C/*
 __pycache__/*
 .ipynb_checkpoints/*
 benchmark-EDA.ipynb
+results/*
+plots/*
+benchmark-EDA.ipynb
+data_arl_bench_old/
+data_arl_bench_old2/
