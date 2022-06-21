@@ -32,6 +32,10 @@ queried_data = benchmark.get_metrics(configuration_to_query, budget=50)
 
 ```
 
+### Further usage
+
+For an insightful usage description please check the file `benchmark-usages-examples.ipynb`
+
 
 ### Cite Us
 
