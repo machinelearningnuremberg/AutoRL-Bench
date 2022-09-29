@@ -8,7 +8,7 @@ Get the data from [HERE](https://rewind.tf.uni-freiburg.de/index.php/s/R9FwPznPe
 
 `cd AutoRL-Bench`
 
-`wget https://rewind.tf.uni-freiburg.de/index.php/s/R9FwPznPecJRqip`
+`wget https://figshare.com/ndownloader/files/37650989?private_link=a60c401c85ab9e8815f6`
 
 ### Load and query the benchmark
 
