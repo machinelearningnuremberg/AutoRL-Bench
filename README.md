@@ -39,4 +39,12 @@ For an insightful usage description please check the file `benchmark-usages-exam
 
 ### Cite Us
 
-The paper associated to this repo is currently under review.
+Please cite us by using the bibtex below:
+```
+@inproceedings { autorlbench-22,
+  author = {Gresa Shala and Sebastian Pineda and Andre' Biedenkapp and Frank Hutter and Josif Grabocka},
+  title = {AutoRL-Bench 1.0},
+  booktitle = {Proceedings of the Workshop on Meta-Learning (NeurIPS)},
+  year = {2022}
+}
+```
