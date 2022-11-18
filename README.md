@@ -39,10 +39,10 @@ For an insightful usage description please check the file `benchmark-usages-exam
 
 ### Cite Us
 
-Please cite us by using the bibtex below:
+Please cite us when using AutoRL-Bench in your work by using the bibtex below:
 ```
 @inproceedings { autorlbench-22,
-  author = {Gresa Shala and Sebastian Pineda and Andre' Biedenkapp and Frank Hutter and Josif Grabocka},
+  author = {Gresa Shala and Sebastian Pineda and Andr{\'e} Biedenkapp and Frank Hutter and Josif Grabocka},
   title = {AutoRL-Bench 1.0},
   booktitle = {Proceedings of the Workshop on Meta-Learning (NeurIPS)},
   year = {2022}
